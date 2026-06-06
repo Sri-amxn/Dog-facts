@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts about dogs</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🐕 Dog Facts</h1>
+        <div id="fact-display" class="fact-box">
+            <p id="fact-text"><%= content || "Click the button to get a random dog fact!"%></p>
+        </div>
+        <form action="/submit" method="POST">
+            <button type="submit">Get a Fact</button>
+        </form>
+    </div>
+</body>
+
+</html>
